@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+  <title>Success Page</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+
+<div class="container" id="success">
+  <img src="images/success.png" alt="Success Image" class="img-fluid w-100">
+  <h1 class="mt-5 title success">Topped up successfully</h1>
+  <p class="lead mt-3">Topped action was successful. Thank you for using our service.</p>
+  <button onclick="handleGoBack()" class="btn btn-primary mt-4">Retour</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+  function handleGoBack() {
+    window.ReactNativeWebView.postMessage("Sending data from WebView");
+  }
+</script>
+</body>
+</html>
